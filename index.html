@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {background: #0d1a2d; font-family: Arial, Helvetica, sans-serif;}
+
+    /* WRAPPER CARD SIZE W 351 X H 599 PX | PADDING 24 PX */
+    .wrapper {
+      width: 351px;
+      height: 599px;
+      background: #15273f;
+      border-radius: 15px;
+      
+      margin: 150px auto 24px auto;
+    }
+
+    /* IMAGE W 299 X H 303 PX*/
+    .image-top {
+      width: 299px;
+      height: 303px;
+      border-radius: 10%;
+
+      padding: 24px 0px 24px 24px;
+    }
+
+    /* TOPIC 16 PX */
+    .topic {
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 0px 24px 24px 24px;
+    }
+
+    /* DESCRIPTION 16 PX */
+    .description {
+      color: #8396b6;
+      font-size: 16px;
+      line-height: 1.5;
+      padding: 0px 24px 24px 24px;
+    }
+
+    /* GROUP BITCOIN TEXT 13 PX TOP&BOTTOM PADDING 27PX SPACE-BETWEEN | BOTTOM-LINE */
+    .bitcoin {
+      display: flex;
+      justify-content: space-between;
+      width: 299px;
+      padding: 0px 24px 24px 24px;
+    }
+
+    .bitcoin-unit {
+      color: #37f3f6;
+      font-size: 15px;
+    }
+
+    .bitcoin-day {
+      color: #8396b6;
+      font-size: 15px;
+    }
+
+    /* LINE BREAK */
+    .line-break {width: 299px; border-top: 1px solid #a8bedb; margin-left: 24px;}
+
+    /* CREATION FOOTER TEXT 14 PX PHOTO H 35PX  | PADDING BTW PHOTO AND TEXT IS 16 PX*/
+
+    .creation {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 14px 24px 0px 24px;
+    }
+
+    .creation-avatar {
+      width: 35px;
+      height: 35px;
+      border: 1px solid white;
+      border-radius: 50%;
+      margin-right: 16px;
+    }
+    .creation-text {
+      font-size: 14px;
+      color: #8396b6;
+    }
+    .creation-text-author {
+      color: white;
+    }
+
+
+
+
+    .attribution { font-size: 11px; text-align: center; color: white }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="container-image">
+      <img src="./images/image-equilibrium.jpg" class="image-top">
+    </div>
+
+    <div class="topic">
+      Equilibrium #3429
+    </div>
+
+    <div class="description">
+      Our Equilibrium collection promotes balance and calm.
+    </div>
+
+    <div class="bitcoin">
+      <div class="bitcoin-unit">0.041ETH</div>
+      <div class="bitcoin-day">3 days left</div>
+    </div>
+
+    <div class="line-break"></div>
+
+    <div class="creation">
+      <div class="container-creation-avatar"><img src="./images/image-avatar.png" class="creation-avatar"></div>
+      <div class="creation-text">Createion of <span class="creation-text-author">Jules Wyvern</span></div>
+    </div>
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kittiphat Pisuittiporn</a>.
+  </div>
+</body>
+</html>
